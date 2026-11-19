@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sreyas A — Tech Enthusiast | AI & ML Student</title>
+<link rel="icon" href="assets/images/sreyas-2.jpg" type="image/x-icon">
+<meta name="description" content="Explore the interactive portfolio of Sreyas A, a B.Tech Computer Science (AI & ML) student and tech enthusiast exploring AI, design, and creative technology.">
+<meta property="og:title" content="Sreyas A — Tech Enthusiast | AI & ML Student">
+<meta property="og:description" content="An interactive, game-inspired portfolio. Explore Sreyas.exe.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/sreyas-2.jpg">
+<meta name="theme-color" content="#0d0a0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- BOOT SCREEN -->
+<div id="boot" role="status" aria-live="polite">
+  <div class="boot-inner">
+    <p class="boot-title glitch" data-text="INITIALIZING SREYAS.EXE">INITIALIZING SREYAS.EXE</p>
+    <p id="boot-line" class="boot-line">Loading personality...</p>
+    <div class="bar"><span id="boot-bar"></span></div>
+    <p id="boot-name" class="boot-name" hidden>SREYAS A<small>TECH ENTHUSIAST</small></p>
+  </div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div><div id="cursor-ring" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="scan" aria-hidden="true"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<header>
+  <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home" class="active"><i>01</i>Home</a>
+    <a href="#about"><i>02</i>About</a>
+    <a href="#journey"><i>03</i>Journey</a>
+    <a href="#vibe"><i>04</i>Vibe</a>
+    <a href="#interests"><i>05</i>Interests</a>
+    <a href="#game"><i>06</i>Game</a>
+    <a href="#contact"><i>07</i>Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1><span class="line">SREYAS</span><span class="line grad">A</span></h1>
+    <p class="class-tag">Tech Enthusiast</p>
+    <p class="lead">Exploring the tech world of infinite possibilities.</p>
+    <p class="sub">A first-year B.Tech Computer Science (AI &amp; ML) student, curious about technology, AI, design, and the endless possibilities of building something new.</p>
+    <a href="#about" class="btn magnetic">Enter my world →</a>
+  </div>
+  <figure class="hero-photo">
+    <img src="assets/images/sreyas-2.jpg" alt="Black and white portrait of Sreyas A, a young man with curly hair, looking straight at the camera" width="900" height="900" fetchpriority="high">
+    <figcaption class="panel" aria-label="Player profile">
+      <b>Player profile</b>
+      <dl><dt>Name</dt><dd>Sreyas A</dd><dt>Class</dt><dd>Tech Enthusiast</dd><dt>Level</dt><dd>01</dd><dt>Status</dt><dd class="live">Exploring</dd></dl>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <h2 class="reveal">Player profile</h2>
+  <div class="about-grid">
+    <img class="reveal portrait" loading="lazy" src="assets/images/sreyas-3.jpg" alt="Sreyas resting his chin on his hand in window light, black and white" width="900" height="900">
+    <div>
+      <dl class="stats reveal">
+        <div><dt>Name</dt><dd>Sreyas A</dd></div>
+        <div><dt>Role</dt><dd>Tech Enthusiast</dd></div>
+        <div><dt>Education</dt><dd>B.Tech Computer Science (AI &amp; ML)</dd></div>
+        <div><dt>Current focus</dt><dd>Exploring technology, AI, design, and Python</dd></div>
+      </dl>
+      <ul class="traits reveal">
+        <li class="tilt">Calm</li><li class="tilt">Ambivert</li><li class="tilt">Easily fascinated by new technology</li><li class="tilt">Creative thinker</li><li class="tilt">Loves blending technology with real-world things</li>
+      </ul>
+      <blockquote class="reveal">“I’m curious about how technology works, how ideas become real things, and how AI can be used to create experiences that actually matter.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="sec">
+  <h2 class="reveal">My journey</h2>
+  <div class="journey">
+    <div class="track" aria-hidden="true"><span id="track-fill"></span></div>
+    <ol class="levels">
+      <li data-img="assets/images/sreyas-1.jpg"><h3>Level 01 — The first spark</h3><p>Started becoming interested in technology during 9th grade after joining the Little KITEs school club.</p><small>Unlocked: curiosity.</small></li>
+      <li data-img="assets/images/sreyas-4.jpg"><h3>Level 02 — AI curiosity</h3><p>The idea of creating an AI project led to a deeper interest in technology and AI.</p><small>Unlocked: the question “how does it work?”</small></li>
+      <li data-img="assets/images/sreyas-5.jpg"><h3>Level 03 — The next level</h3><p>That curiosity eventually led to pursuing B.Tech Computer Science (AI &amp; ML).</p><small>Unlocked: a degree path.</small></li>
+      <li data-img="assets/images/sreyas-6.jpg" class="quest"><h3>Current quest</h3><p>Currently exploring Python and learning more about how AI works.</p><small>In progress.</small></li>
+      <li data-img="assets/images/sreyas-3.jpg" class="quest future"><h3>Future quest</h3><p>“How does AI actually work, and how can I build my own AI chatbot?”</p><small>Not started yet. Next up.</small></li>
+    </ol>
+    <img id="journey-img" class="journey-img" loading="lazy" src="assets/images/sreyas-1.jpg" alt="Portrait of Sreyas that changes as you move through each level" width="900" height="900">
+  </div>
+</section>
+
+<!-- VIBE -->
+<section id="vibe" class="sec">
+  <h2 class="reveal">Current vibe</h2>
+  <div class="vibe-grid">
+    <div class="player reveal">
+      <div class="art" aria-hidden="true"></div>
+      <div class="meta">
+        <small>Now playing</small>
+        <strong>Fa Fa Fa</strong>
+        <span>O.M – Operation Mode</span>
+        <div class="wave" id="wave" aria-hidden="true"></div>
+        <div class="prog" aria-hidden="true"><span id="prog-fill"></span></div>
+        <button id="play" class="btn small" aria-pressed="false">Play visual</button>
+        <p class="note">Visual only. No audio plays here.</p>
+      </div>
+    </div>
+    <dl class="status reveal">
+      <div class="tilt"><dt>Currently creating</dt><dd>This portfolio</dd></div>
+      <div class="tilt"><dt>Currently learning</dt><dd>Python</dd></div>
+      <div class="tilt"><dt>Current curiosity</dt><dd>How AI works + building an AI chatbot</dd></div>
+      <div class="tilt"><dt>Current mood</dt><dd>Exploring.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SIDE QUESTS -->
+<section id="interests" class="sec">
+  <h2 class="reveal">Side quests</h2>
+  <div class="quests">
+    <article class="q tilt reveal" id="q-music"><h3>Music</h3><p>Rap, melody, and music in Malayalam, Tamil, Hindi and English.</p>
+      <div class="chips" id="music-chips"><button>Rap</button><button>Melody</button><button>Malayalam</button><button>Tamil</button><button>Hindi</button><button>English</button></div>
+      <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+    <article class="q tilt reveal"><h3>Cinema</h3><p>Mostly Malayalam movies, plus the occasional English superhero or action film.</p>
+      <ul class="films"><li>Manichithrathazhu</li><li>Tiyaan</li><li>Khalifa</li><li>Lucifer</li><li>Narasimham</li><li>King</li><li>Spider-Man</li><li>Venom</li></ul></article>
+    <article class="q tilt reveal" id="q-design"><h3>Design</h3><p>Websites, social media content, and digital creative work. Move your pointer or tap to change the palette.</p>
+      <button class="swatch btn small" id="swatch">Shuffle palette</button><div class="canvas" id="design-canvas" aria-hidden="true"><b></b><b></b><b></b></div></article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec">
+  <h2 class="reveal">Frames</h2>
+  <div class="gallery">
+    <img class="reveal" loading="lazy" src="assets/images/sreyas-1.jpg" alt="Sreyas in a dark shirt against a dark studio backdrop" width="900" height="900">
+    <img class="reveal" loading="lazy" src="assets/images/sreyas-4.jpg" alt="Sreyas at a laptop with code and a neural-network sketch on screens behind him" width="900" height="900">
+    <img class="reveal" loading="lazy" src="assets/images/sreyas-5.jpg" alt="Close portrait of Sreyas facing the camera" width="900" height="900">
+    <img class="reveal" loading="lazy" src="assets/images/sreyas-6.jpg" alt="Sreyas looking off to the side with leaves blurred behind him" width="900" height="900">
+  </div>
+</section>
+
+<!-- GAME -->
+<section id="game" class="sec">
+  <h2 class="reveal">How well do you know Sreyas?</h2>
+  <p class="reveal subtle">Think you’ve explored enough?</p>
+  <div class="quiz reveal" id="quiz" aria-live="polite"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec final">
+  <h2 class="reveal">Ready to hire me?</h2>
+  <p class="reveal">Have an idea, opportunity, or something worth building? Let’s connect.</p>
+  <div class="links reveal">
+    <a class="btn magnetic" href="mailto:itssreyasa@gmail.com">Email me</a>
+    <a class="btn magnetic" href="https://github.com/itssreyasa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn magnetic" href="https://www.linkedin.com/in/sreyas-a-5aa013429" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn magnetic" href="https://www.instagram.com/iamsreyasa" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </div>
+  <div class="end" id="end"><p>Thanks for playing.</p><small>Sreyas A © 2026</small></div>
+</section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
